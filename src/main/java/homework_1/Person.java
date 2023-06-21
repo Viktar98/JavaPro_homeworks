@@ -3,14 +3,7 @@ package homework_1;
 public class Person {
     private String fullName;
     private int age;
-    void move(){
-        System.out.println(fullName + " goes.");
-    }
-    void talk(){
-        System.out.println(fullName + " talks.");
-    }
     public Person(){}
-
     public Person(String fullName, int age) {
         this.fullName = fullName;
         if(age<0){
@@ -19,4 +12,12 @@ public class Person {
         }
         this.age = age;
     }
+
+    void move(){
+        System.out.println(fullName + " goes.");
+    }
+    void talk(){
+        System.out.println(fullName + " talks.");
+    }
+
 }
