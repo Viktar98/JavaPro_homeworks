@@ -1,4 +1,4 @@
-package lesson5.sea_battle;
+package sea_battle;
 
 public class Field {
     private Cell[][] field;
