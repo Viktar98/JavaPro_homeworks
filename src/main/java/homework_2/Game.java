@@ -138,13 +138,15 @@ public class Game {
         }
     }
 
-    public void printInfo() {
+    public void printInfo() throws InterruptedException {
         System.out.println("\nКоличество игроков: " + numbersOfPlayers);
         for (int i = 0; i < players.length; i++) {
-            System.out.println("\nИгрок " + players[i].getName() + ", количество карт - " + numberOfCardForPlayer);
+            System.out.println("\nИгрок " + players[i].getName() + ", количество карт: " + numberOfCardForPlayer);
             for (int j = 0; j < players[i].getCards().length; j++) {
-                if (players[i].getCards()[j] != null)
+                if (players[i].getCards()[j] != null) {
+                    Thread.sleep(400);
                     System.out.print(players[i].getCards()[j].getCardStr() + " ");
+                }
                 else break;
             }
         }
