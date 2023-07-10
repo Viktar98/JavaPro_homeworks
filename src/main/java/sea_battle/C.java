@@ -2,12 +2,12 @@ package sea_battle;
 
 public enum C {
     SERVICE_CELL("null",false),
-    EMPTY_CELL("\uD83D\uDFE9",true),
+    EMPTY_CELL("🟩",true),
     HIDDEN_CELL("🟦",true),
     SHIP_CELL("⬛️",false),
     WOUNDED_SHIP_CELL("🟧",false),
     KILLED_SHIP_CELL("🟥",false),
-    MISSED_SHOT_CELL("🐟",false);
+    MISSED_SHOT_CELL("\uD83D\uDC1F",false);
     private String cell;
     private boolean free;
 

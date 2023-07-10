@@ -41,15 +41,16 @@ public class Game {
             System.out.print("⚠ ПОЖАЛУЙСТА, ПРОВЕРЬТЕ ПРАВИЛЬНОСТЬ ВВОДА ⚠");
             System.out.println("\n\uD83C\uDF0A [1 - 3]: ");
         }
+        sc1.close();
         players[0].setLogo(choiceInt);
         players[0].setName(tmpName);
-        tmpName = "";
-        System.out.print(mess.getMess3_2());
-        Scanner sc2 = new Scanner(System.in);
-        tmpName = sc2.next();
+        tmpName = "гриша";
+        System.out.println(mess.getMess3_2()); //TODO
+        //tmpName = sc1.next();
+        System.out.println("\n\uD83C\uDF0A"+mess.mess4(players[0].getLogo()));  //TODO нормально сделать
         System.out.print(mess.mess4(players[0].getLogo()));
         while (true) {
-            choiceInt = sc2.nextInt();
+            choiceInt = sc1.nextInt();
             if (choiceInt >= 1 && choiceInt <= 3)
                 break;
             System.out.print("⚠ ПОЖАЛУЙСТА, ПРОВЕРЬТЕ ПРАВИЛЬНОСТЬ ВВОДА ⚠");
@@ -57,6 +58,7 @@ public class Game {
         }
         players[1].setLogo(choiceInt);
         players[1].setName(tmpName);
+        sc1.close();
     }
 }
 
