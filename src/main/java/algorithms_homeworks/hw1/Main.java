@@ -10,6 +10,8 @@ public class Main {
         int[] test1 = new int[]{1, 1, 2, 2, 3, 3, 4, 4, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11};
         int[] test2 = new int[]{12, 12, 13, 13, 14, 14, 15, 15, 16, 16, 20, 20, 32, 32, 44, 44};
         int[] test3 = new int[]{10, 10, 11, 12, 12, 17, 17};
+        int[] test4 = new int[]{1,1,2,2,3,3,4,4,5,6,6,6,7,7};
+        int[] test5 = new int[]{1,1,2,2,5,6,6,6,7,7};
 
         System.out.println("Сложность алгоритма: O(n).");
         // или O(n/2), или O(n/4), если опустить множетели (сам пока не понял)
@@ -22,6 +24,12 @@ public class Main {
 
         System.out.println("\nTEST 3:");
         System.out.println(searchNotDoubleElem(test3));
+
+        System.out.println("\nTEST 4:");
+        System.out.println(searchNotDoubleElem(test4));
+
+        System.out.println("\nTEST 5:");
+        System.out.println(searchNotDoubleElem(test5));
 
     }
 
