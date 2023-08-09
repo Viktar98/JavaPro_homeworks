@@ -14,7 +14,7 @@ public class Main {
         int[] test5 = new int[]{1,1,2,2,5,6,6,6,7,7};
 
         System.out.println("Сложность алгоритма: O(n).");
-        // или O(n/2), или O(n/4), если опустить множетели (сам пока не понял)
+        // или O(n/4), если не опускать множетели (сам пока не понял)
 
         System.out.println("\nTEST 1:");
         System.out.println(searchNotDoubleElem(test1));
